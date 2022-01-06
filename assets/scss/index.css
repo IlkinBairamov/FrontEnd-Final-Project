@@ -1,0 +1,206 @@
+#navbar {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  font-weight: 700;
+}
+
+#navbar .nav-item {
+  padding: 15px 0px;
+}
+
+#navbar .dropdown .dropdown-menu {
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  width: 200px;
+  height: 163px;
+  margin-top: 20px;
+  padding: 0px;
+  border: none;
+  -webkit-transform: translateY(-15%);
+          transform: translateY(-15%);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#navbar .dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+#navbar .dropdown .dropdown-item {
+  font-weight: 400;
+  font-size: 14px;
+  color: #6F8BA4;
+  line-height: 40px;
+  letter-spacing: 1px;
+  border: transparent;
+  border-bottom: 1px solid #F7F6FF;
+  padding-left: 20px;
+  margin: 0px;
+}
+
+#navbar .dropdown .dropdown-item:active {
+  background-color: unset !important;
+}
+
+#navbar .navlist-toggle {
+  display: block;
+  right: 20px;
+  left: 260px;
+}
+
+#navbar .navList {
+  margin-left: -250px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#navbar .navList li a {
+  font-family: 'Nunito', sans-serif;
+  margin: 0px 20px;
+  padding: 0px;
+  color: #6F8BA4;
+  font-weight: 400;
+}
+
+#navbar .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px;
+}
+
+#navbar .buttons li {
+  list-style-type: none;
+  margin: 25px 0px 0px 15px;
+  font-size: 12px;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+}
+
+#navbar .buttons li a {
+  text-decoration: none;
+}
+
+#navbar .buttons .signIn a {
+  padding: 7px 30px;
+  color: #585CE9;
+  border: 1px solid #585CE9;
+  border-radius: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-weight: 700;
+  height: 32px;
+  letter-spacing: 0.5px;
+}
+
+#navbar .buttons .signIn a:hover {
+  background-color: #585CE9;
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#navbar .buttons .signUp a {
+  padding: 7px 30px;
+  color: white;
+  border: 1px solid #585CE9;
+  background-color: #585CE9;
+  border-radius: 5px;
+  font-weight: 700;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  letter-spacing: 0.5px;
+}
+
+#navbar .buttons .signUp a:hover {
+  background-color: white;
+  color: #585CE9;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 992px) {
+  #navbar .dropdown {
+    position: relative;
+  }
+  #navbar .dropdown .dropdown-menu {
+    position: absolute;
+    left: 65%;
+    top: 10px;
+  }
+  .navList {
+    left: -7%;
+    display: none;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: absolute;
+    top: 95%;
+    width: 95%;
+    background: white;
+    border-radius: 5px;
+  }
+  .navList li a {
+    margin: 0px 10px !important;
+  }
+  .nav-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .buttons {
+    display: none  !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navbar-toggler {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .navList {
+    position: absolute;
+    left: -15%;
+    width: 93%;
+  }
+  #navbar .dropdown .dropdown-menu {
+    top: 11px;
+    position: absolute;
+    left: 90px;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #585CE9;
+  font-family: 'Nunito Sans', sans-serif;
+}
+/*# sourceMappingURL=index.css.map */
