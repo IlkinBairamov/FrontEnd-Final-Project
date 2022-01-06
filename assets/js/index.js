@@ -14,7 +14,23 @@ $(window).scroll(function () {
     }
     else
     {
-        $("#navbar").css({"background-color":"orange"})
+        $("#navbar").css({"background-color":"none"})
     }
+})
+
+
+
+$(window).scroll(function () {
+    let height=$(window).scrollTop()
+    if (height>500) {
+        $(".scroll-icon").addClass("scroll-active")
+    }
+    else{
+        $(".scroll-icon").removeClass("scroll-active")
+    }
+})
+
+$(".scroll-icon").click(function () {
+    $(window).scrollTop(0)
 })
   });

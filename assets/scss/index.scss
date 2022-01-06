@@ -14,5 +14,18 @@ html{
 body{
     color: $primary-color;
     font-family: 'Nunito Sans', sans-serif;
+    height: 1600px;
     
+}
+
+.scroll-icon{
+    position: fixed;
+    top: 90%;
+    left: 90%;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+.scroll-active{
+    display: block !important;
 }
