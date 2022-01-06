@@ -3,6 +3,8 @@
 @import "./partials/intro-main";
 @import "./partials/future-section";
 @import "./partials/cloud-service-section";
+@import "./partials/bunner";
+@import "./partials/our-team-section";
 
 *{
     padding: 0;
@@ -17,7 +19,7 @@ html{
 body{
     color: $primary-color;
     font-family: 'Nunito Sans', sans-serif;
-   
+   height: 3000px;
 }
 
 .scroll-icon{

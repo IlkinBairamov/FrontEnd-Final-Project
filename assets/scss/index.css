@@ -461,6 +461,181 @@
   background-color: white;
 }
 
+#bunner {
+  background-image: url(http://demo.tempload.com/jirono/assets/images/photos/parallax.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  background-attachment: fixed;
+  height: 280px;
+}
+
+#bunner::before {
+  content: '';
+  position: absolute;
+  width: 140%;
+  height: 100%;
+  opacity: .80;
+  background: #585CE9;
+  z-index: 2;
+  top: 0%;
+  left: -40%;
+}
+
+#bunner span {
+  color: white;
+}
+
+.relative {
+  position: relative;
+}
+
+#our-team {
+  padding-top: 80px;
+  padding-bottom: 120px;
+}
+
+#our-team .team-content {
+  text-align: center;
+}
+
+#our-team .team-content p {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 60px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #6F8BA4;
+  letter-spacing: 0.6px;
+  line-height: 26px;
+}
+
+#our-team .team-content .social {
+  text-align: center;
+  padding: 0px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#our-team .team-content .social li {
+  list-style: none;
+  display: inline-block;
+}
+
+#our-team .team-content .social li a {
+  color: #585CE9;
+  font-size: 15px;
+  letter-spacing: 15px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#our-team .team-content .team-info {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#our-team .team-content .team-info h3 {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 0.69px;
+  margin-top: 5px;
+}
+
+#our-team .team-content .team-info span {
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  color: #FFF7F5;
+  letter-spacing: 0.6px;
+}
+
+#our-team .team-content:hover::before {
+  height: 135px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: scaleY(100%);
+          transform: scaleY(100%);
+}
+
+#our-team .team-content:hover .social li a {
+  color: white;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#our-team .team-content::before {
+  content: " ";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background-image: linear-gradient(135deg, #585CE9 0%, #585CE9 100%);
+  height: 75px;
+  z-index: -1;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#our-team .team-card {
+  -webkit-box-shadow: 0 2px 48px 0 #ece7e7;
+          box-shadow: 0 2px 48px 0 #ece7e7;
+  position: relative;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#our-team .team-card:hover .team-img {
+  bottom: -35px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#our-team .team-card .team-img {
+  width: 93px;
+  height: 92px;
+  border: 6px solid #fff;
+  -webkit-box-shadow: 0 2px 48px 0 #ece7e7;
+          box-shadow: 0 2px 48px 0 #ece7e7;
+  border-radius: 50%;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  bottom: -45px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#our-team .team-card .team-img img {
+  border-radius: 50%;
+  max-width: 100%;
+}
+
+#our-team .header-text h2 {
+  font-weight: 400;
+  font-size: 28px;
+  color: #3B566E;
+  letter-spacing: 1.75px;
+  line-height: 38px;
+  margin-bottom: 20px;
+}
+
+#our-team .header-text span {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 1px;
+  margin-bottom: 50px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -475,6 +650,7 @@ html {
 body {
   color: #585CE9;
   font-family: 'Nunito Sans', sans-serif;
+  height: 3000px;
 }
 
 .scroll-icon {
