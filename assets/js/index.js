@@ -14,7 +14,8 @@ $(window).scroll(function () {
     }
     else
     {
-        $("#navbar").css({"background-color":"none"})
+        $("#navbar").css({ "position": "absolute",
+        "background-color": "transparent"})
     }
 })
 

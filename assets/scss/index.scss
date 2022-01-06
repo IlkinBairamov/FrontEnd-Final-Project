@@ -1,5 +1,7 @@
-@import "./partials/navbar";
 @import "./partials/variables";
+@import "./partials/navbar";
+@import "./partials/intro-main";
+
 
 *{
     padding: 0;
@@ -14,8 +16,7 @@ html{
 body{
     color: $primary-color;
     font-family: 'Nunito Sans', sans-serif;
-    height: 1600px;
-    
+   
 }
 
 .scroll-icon{
