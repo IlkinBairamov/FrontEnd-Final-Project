@@ -9,6 +9,10 @@
 @import "./partials/parallax-text";
 @import "./partials/latest-section";
 @import "./partials/footer";
+@import "./partials/about-html/parallax-test-2";
+@import "./partials/about-html/future-section";
+@import "./partials/about-html/mission-section";
+
 
 *{
     padding: 0;
@@ -24,6 +28,12 @@ body{
     color: $primary-color;
     font-family: 'Nunito Sans', sans-serif;
    height: 3000px;
+}
+
+.transparant{
+    left: 0px;
+    right: 0px;
+    top: 0px;
 }
 
 .scroll-icon{

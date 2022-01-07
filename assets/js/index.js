@@ -9,6 +9,7 @@ $(document).ready(function(){
     
 $(window).scroll(function () {
     let height=$(window).scrollTop()
+    if( $("#navbar").hasClass("transparant")){
     if (height>0) {
         $("#navbar").css({"background-color":"white","position":"fixed","top":"0"})
     }
@@ -17,7 +18,16 @@ $(window).scroll(function () {
         $("#navbar").css({ "position": "absolute",
         "background-color": "transparent"})
     }
-})
+}})
+$(window).scroll(function () {
+    let height=$(window).scrollTop()
+    if( $("#navbar").hasClass("none-background")){
+    if (height>0) {
+        $("#navbar").css({"background-color":"white","position":"fixed","top":"0"})
+    }
+}})
+
+
 
 
 
