@@ -1246,6 +1246,106 @@
   font-size: 14px;
   line-height: 26px;
   margin-bottom: 20px;
+  color: #6F8BA4;
+}
+
+@media screen and (max-width: 992px) {
+  #mission .about .about-text {
+    position: relative !important;
+    width: 100% !important;
+    -webkit-transform: translateY(0) !important;
+            transform: translateY(0) !important;
+  }
+  #mission .about .about-image {
+    width: 100% !important;
+    height: 400px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #mission .about .about-image {
+    height: 275px !important;
+    margin-bottom: 0px;
+  }
+}
+
+#vision {
+  margin: 100px 0px;
+  position: relative;
+}
+
+#vision .about .about-image {
+  width: 70%;
+  float: right;
+  height: 500px;
+  overflow: hidden;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+#vision .about .about-image img {
+  max-width: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#vision .about .about-image img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#vision .about .about-text {
+  position: absolute;
+  z-index: 2;
+  width: 40%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: #fff;
+  -webkit-box-shadow: 0 2px 48px 0 #ece7e7;
+          box-shadow: 0 2px 48px 0 #ece7e7;
+  border-radius: 5px;
+  padding: 30px;
+  padding-bottom: 10px;
+}
+
+#vision .about .about-text h2 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 38px;
+  letter-spacing: 1.75px;
+  color: #3B566E;
+  margin-bottom: 20px;
+}
+
+#vision .about .about-text p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  margin-bottom: 20px;
+  color: #6F8BA4;
+}
+
+@media screen and (max-width: 992px) {
+  #vision .about .about-image {
+    width: 100% !important;
+    height: 400px;
+  }
+  #vision .about-text {
+    position: relative !important;
+    width: 100% !important;
+    -webkit-transform: translateY(-10%) !important;
+            transform: translateY(-10%) !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #vision .about .about-image {
+    height: 200px;
+  }
 }
 
 * {
