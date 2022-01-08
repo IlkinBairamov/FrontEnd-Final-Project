@@ -35,13 +35,14 @@
         p{
             color: white;
             font-size: 28px;
+            position: relative;
             &::before{
                 content: '';
                 position: absolute;
                 left: 0px;
                 right: 0px;
                 top: 50px;
-                 margin: auto;
+                margin: auto;
                 width: 115px;
                 height: 1px;
                 border-top: 1px dashed #fff;

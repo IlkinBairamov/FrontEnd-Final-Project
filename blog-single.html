@@ -195,9 +195,9 @@
                           </div>
                           <div class="col-lg-12">
                               <div class="section-comment">
-                                   <h5 style="margin-bottom: 30px;">Comments (3)</h5>
-                                   <ul>
-                                       <li>
+                                   <h5 style="margin-bottom: 30px;">Comments <span class="count"></span></h5>
+                                   <ul class="list-comments">
+                                       <!-- <li>
                                            <div class="avatar">
                                                <img src="./assets/img/comment-avatar.png" alt="">
                                            </div>
@@ -213,8 +213,8 @@
                                                </div>
                                                <p>Praesent ut fringilla ligula. Vivamus et lacus nec risus malesuada vestibulum. Phasellus lobortis viverra lobortis. Donec iaculis, erat eu bibendum faucibus.</p>
                                            </div>
-                                       </li>
-                                       <li>
+                                       </li> -->
+                                       <!-- <li>
                                         <div class="avatar">
                                             <img src="./assets/img/comment-avatar.png" alt="">
                                         </div>
@@ -249,11 +249,12 @@
                                                 </div>
                                             </li>
                                         </ul>
-                                    </li>
+                                    </li> -->
                                    </ul>
                               </div>
                           </div>
                           <div class="col-lg-12">
+                              <span class="text-danger d-none error">Please input anything!</span>
                               <div class="post-comment">
                                   <h5>Post a Comment</h5>
                                   <div class="comment-form">
@@ -261,7 +262,7 @@
                                         <div class="row">
                                             <div class="col-lg-6 col-md-6 col-sm-12">
                                                 <label for="name">Name:</label>
-                                                <input type="text" id="name">
+                                                <input class="input-name" type="text" id="name">
                                             </div>
                                             <div class="col-lg-6 col-md-6 col-sm-12">
                                                 <label for="name">E-mail:</label>
@@ -269,10 +270,10 @@
                                             </div>
                                             <div class="col-lg-12">
                                                     <label for="textarea">Comment:</label>
-                                                    <textarea name="" id="textarea"></textarea>
+                                                    <textarea class="input-txt" name="" id="textarea"></textarea>
                                             </div>
                                             <div class="col-lg-12">
-                                                <button type="submit"> Submit Comment</button>
+                                                <button type="submit" class="add-buttom"> Submit Comment</button>
                                             </div>
                                         </div>
                                       </form>
