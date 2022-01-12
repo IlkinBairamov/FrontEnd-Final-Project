@@ -23,5 +23,3 @@ document.addEventListener("scroll",function(){
     }
 })
 
-// animate__fadeInRight
-// animate__fadeInLeft
