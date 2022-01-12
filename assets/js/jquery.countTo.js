@@ -127,4 +127,19 @@
       data[method].call(data);
     });
   };
+
 }));
+
+
+
+let check=true;
+
+$(document).on("scroll",window,function(){
+  if ($(window).scrollTop()>1850 && check)
+  {
+    $(".timer").countTo({from:0, to:$(this).attr("data-to")})
+    check=false;
+  }
+})
+
+
