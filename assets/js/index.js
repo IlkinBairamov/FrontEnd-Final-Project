@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
 
     $(window).on('load',function(){
@@ -235,5 +236,7 @@ nextBtn.addEventListener("click", function () {
   function changeImg(image) {
     largeImg.setAttribute("src", images.getAttribute("href"))
 }
+
+
 
 
