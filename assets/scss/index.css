@@ -523,6 +523,21 @@
   transition: 0.3s;
 }
 
+@media (max-width: 576px) {
+  .col-sm-3 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 25%;
+  }
+  #bunner .hover span {
+    font-size: 16px;
+  }
+  #bunner .hover p::before {
+    width: 65px;
+  }
+}
+
 #our-team {
   padding-top: 80px;
   padding-bottom: 120px;
@@ -2516,6 +2531,25 @@
   cursor: pointer;
   position: relative;
   text-decoration: none;
+}
+
+@media screen and (max-width: 765px) {
+  .new-list {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #parallax-text .info-3 p {
+    font-size: 24px;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  #parallax-text .info-3 p {
+    font-size: 14px;
+  }
 }
 
 .popup {

@@ -56,3 +56,17 @@
         }
     }
 }
+
+@media (max-width: 576px){
+    .col-sm-3 {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+    #bunner .hover span{
+        font-size: 16px;
+    }
+    #bunner .hover p::before{
+        width: 65px;
+    }
+
+}

@@ -183,7 +183,7 @@
     }
 
     &::after{
-        font-family: FontAwesome;
+    font-family: FontAwesome;
     content: "\f10e";
     position: absolute;
     right: 0px;
@@ -308,4 +308,25 @@
     }
 
   }
+}
+
+
+@media screen and (max-width:765px){
+.new-list{
+    margin-bottom: 15px;
+}
+}
+
+
+@media screen and (max-width:992px){
+    #parallax-text .info-3 p{
+        font-size: 24px;
+        left: 0;
+    }
+}
+
+@media screen and (max-width:390px){
+    #parallax-text .info-3 p{
+        font-size: 14px;
+    }
 }
