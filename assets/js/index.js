@@ -1,3 +1,31 @@
+let signBox=document.querySelector(".buttons")
+let usernameBox=document.querySelector(".username")
+if (checkUser()===true) {
+    signBox.style.display="none"
+    usernameBox.style.display="block"
+    document.querySelector(".username span").innerText=localStorage.getItem("userInfo")
+    document.querySelector(".logout").addEventListener("click",()=>{
+        localStorage.removeItem("user"); localStorage.removeItem("userInfo")
+        mainPage()
+        setTimeout(() => {
+            signBox.style.display="block"
+            usernameBox.style.display="none"
+        }, 1000);
+      })
+    }
+
+  function checkUser() {
+    if (localStorage.getItem("user")==="true") {
+      return true
+    }
+    else{
+      return false
+    }
+   }
+
+   let mainPage=()=>{location.href = "./index.html";}
+
+   // login register end
 
 $(document).ready(function(){
 
@@ -228,7 +256,6 @@ nextBtn.addEventListener("click", function () {
   function changeImg(image) {
     largeImg.setAttribute("src", images.getAttribute("href"))
 }
-
 
 
 
